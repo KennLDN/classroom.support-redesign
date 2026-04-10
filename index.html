@@ -15,14 +15,11 @@
 </head>
 <body>
 
-  <!-- ═══════════════════════════════════════════
-       NAVIGATION
-  ═══════════════════════════════════════════ -->
-  <nav class="nav">
+  <nav class="nav" id="nav">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">
-        <span class="nav__logo-text">Classroom Support</span>
-        <span class="nav__logo-bar"></span>
+        <img src="img/logo.svg" alt="" class="nav__logo-mark" aria-hidden="true">
+        <span class="nav__logo-name">Classroom<br>Support</span>
       </a>
       <div class="nav__links">
         <a href="teaching-assistants.html">Teaching Assistants</a>
@@ -33,35 +30,268 @@
         <a href="contact.html">Contact</a>
       </div>
       <div class="nav__actions">
-        <a href="https://classroomsupport.vincere.io/careers/candidate/login" class="btn btn--outline" target="_blank" rel="noopener">Log In</a>
-        <a href="https://classroomsupport.vincere.io/careers/" class="btn btn--primary" target="_blank" rel="noopener">Find Jobs</a>
+        <a href="https://classroomsupport.vincere.io/careers/candidate/login" class="btn btn-outline-dark" target="_blank" rel="noopener">Log In</a>
+        <a href="contact.html" class="btn btn-red">Get in Touch</a>
       </div>
-      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <button class="nav__burger" id="nav-burger" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <div class="nav__rainbow-line"></div>
   </nav>
-  <div class="nav__mobile" aria-hidden="true">
+  <div class="nav__mobile" id="nav-mobile" hidden>
     <a href="teaching-assistants.html">Teaching Assistants</a>
     <a href="teachers.html">Teachers</a>
     <a href="schools.html">Schools</a>
     <a href="our-approach.html">Our Approach</a>
-    <a href="https://classroomsupport.vincere.io/careers/" target="_blank" rel="noopener">View Jobs</a>
-    <a href="contact.html">Contact Us</a>
-    <a href="https://classroomsupport.vincere.io/careers/" class="btn btn--primary" target="_blank" rel="noopener">Browse All Jobs →</a>
+    <a href="https://classroomsupport.vincere.io/careers/" target="_blank" rel="noopener">Jobs</a>
+    <a href="contact.html">Contact</a>
+    <div class="nav__mobile-actions">
+      <a href="https://classroomsupport.vincere.io/careers/candidate/login" class="btn btn-outline-dark w-full" target="_blank" rel="noopener">Log In</a>
+      <a href="contact.html" class="btn btn-red w-full">Get in Touch</a>
+    </div>
   </div>
 
-  <!-- ═══════════════════════════════════════════
-       HERO
-  ═══════════════════════════════════════════ -->
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero__bg">
-      <div class="hero__grid"></div>
-      <div class="hero__orb hero__orb--1"></div>
-      <div class="hero__orb hero__orb--2"></div>
-      <div class="hero__orb hero__orb--3"></div>
+    <div class="container">
+      <div class="hero__inner">
+        <div>
+          <span class="hero__eyebrow">London &amp; South East · Est. 2010</span>
+          <h1>Leaders in<br>SEND Recruitment</h1>
+          <p class="lead">Connecting exceptional Teaching Assistants and Teachers with SEN and mainstream schools across London, Kent and the South East — safeguarding at the heart of everything we do.</p>
+          <div class="hero__btns">
+            <a href="schools.html" class="btn btn-white btn-lg">I need staff</a>
+            <a href="teaching-assistants.html" class="btn btn-outline-white btn-lg">I'm looking for a role</a>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <svg class="hero__puzzle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,0 L 50,0 L 50,17 A 8 8 0 0 1 50,33 L 50,50 L 33,50 A 8 8 0 0 1 17,50 L 0,50 Z" fill="white"/>
+            <path d="M 50,0 L 100,0 L 100,50 L 83,50 A 8 8 0 0 1 67,50 L 50,50 L 50,33 A 8 8 0 0 0 50,17 L 50,0 Z" fill="white"/>
+            <path d="M 0,50 L 17,50 A 8 8 0 0 1 33,50 L 50,50 L 50,67 A 8 8 0 0 1 50,83 L 50,100 L 0,100 Z" fill="white"/>
+            <path d="M 50,50 L 67,50 A 8 8 0 0 1 83,50 L 100,50 L 100,100 L 50,100 L 50,83 A 8 8 0 0 0 50,67 L 50,50 Z" fill="white"/>
+          </svg>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- PILLAR STRIP -->
+  <div class="pillars">
+    <div class="pillar pillar--blue">
+      <svg class="pillar__icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="8" y="22" width="36" height="24" rx="2" stroke="white" stroke-width="2.5"/>
+        <path d="M16 22V16a10 10 0 0120 0v6" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="26" cy="34" r="3" fill="white"/>
+      </svg>
+      <h3>For Schools</h3>
+      <p>We find thoroughly vetted Teaching Assistants and Teachers for SEN and mainstream schools across London, Kent and Essex — at short notice or for permanent hires.</p>
+      <a href="schools.html" class="pillar__link">Find out more <span aria-hidden="true">→</span></a>
+      <svg class="pillar__deco" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M 0,0 L 50,0 L 50,17 A 8 8 0 0 1 50,33 L 50,50 L 33,50 A 8 8 0 0 1 17,50 L 0,50 Z" fill="white"/>
+        <path d="M 50,0 L 100,0 L 100,50 L 83,50 A 8 8 0 0 1 67,50 L 50,50 L 50,33 A 8 8 0 0 0 50,17 L 50,0 Z" fill="white"/>
+        <path d="M 0,50 L 17,50 A 8 8 0 0 1 33,50 L 50,50 L 50,67 A 8 8 0 0 1 50,83 L 50,100 L 0,100 Z" fill="white"/>
+        <path d="M 50,50 L 67,50 A 8 8 0 0 1 83,50 L 100,50 L 100,100 L 50,100 L 50,83 A 8 8 0 0 0 50,67 L 50,50 Z" fill="white"/>
+      </svg>
+    </div>
+    <div class="pillar pillar--green">
+      <svg class="pillar__icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="26" cy="18" r="8" stroke="white" stroke-width="2.5"/>
+        <path d="M10 44c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <h3>Teaching Assistants</h3>
+      <p>We match passionate TAs with roles where your skills shine — with dedicated consultant support from first call to successful, lasting placement.</p>
+      <a href="teaching-assistants.html" class="pillar__link">Find TA roles <span aria-hidden="true">→</span></a>
+      <svg class="pillar__deco" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M 0,0 L 50,0 L 50,17 A 8 8 0 0 1 50,33 L 50,50 L 33,50 A 8 8 0 0 1 17,50 L 0,50 Z" fill="white"/>
+        <path d="M 50,0 L 100,0 L 100,50 L 83,50 A 8 8 0 0 1 67,50 L 50,50 L 50,33 A 8 8 0 0 0 50,17 L 50,0 Z" fill="white"/>
+        <path d="M 0,50 L 17,50 A 8 8 0 0 1 33,50 L 50,50 L 50,67 A 8 8 0 0 1 50,83 L 50,100 L 0,100 Z" fill="white"/>
+        <path d="M 50,50 L 67,50 A 8 8 0 0 1 83,50 L 100,50 L 100,100 L 50,100 L 50,83 A 8 8 0 0 0 50,67 L 50,50 Z" fill="white"/>
+      </svg>
+    </div>
+    <div class="pillar pillar--yellow">
+      <svg class="pillar__icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="8" y="10" width="28" height="20" rx="2" stroke="#1C1C1C" stroke-width="2.5"/>
+        <path d="M8 16h28M16 10v20" stroke="#1C1C1C" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M14 38h16M22 30v12" stroke="#1C1C1C" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <h3>Teachers</h3>
+      <p>From Early Career Teachers to experienced practitioners, we connect outstanding teachers with primary, secondary and SEND schools across the region.</p>
+      <a href="teachers.html" class="pillar__link">Find teacher roles <span aria-hidden="true">→</span></a>
+      <svg class="pillar__deco" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M 0,0 L 50,0 L 50,17 A 8 8 0 0 1 50,33 L 50,50 L 33,50 A 8 8 0 0 1 17,50 L 0,50 Z" fill="#1C1C1C"/>
+        <path d="M 50,0 L 100,0 L 100,50 L 83,50 A 8 8 0 0 1 67,50 L 50,50 L 50,33 A 8 8 0 0 0 50,17 L 50,0 Z" fill="#1C1C1C"/>
+        <path d="M 0,50 L 17,50 A 8 8 0 0 1 33,50 L 50,50 L 50,67 A 8 8 0 0 1 50,83 L 50,100 L 0,100 Z" fill="#1C1C1C"/>
+        <path d="M 50,50 L 67,50 A 8 8 0 0 1 83,50 L 100,50 L 100,100 L 50,100 L 50,83 A 8 8 0 0 0 50,67 L 50,50 Z" fill="#1C1C1C"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- ABOUT SPLIT -->
+  <section class="sec sec-white">
+    <div class="container">
+      <div class="split reveal">
+        <div class="split__img">
+          <img src="https://images.squarespace-cdn.com/content/v1/5f50b73514c683547b189f6d/1599465193225-2CUCPQ2SBAB75TB53KMI/Children_LR.jpg" alt="Children learning in a supported classroom" loading="lazy">
+        </div>
+        <div class="split__text">
+          <span class="label">About Us</span>
+          <h2>A personal touch in SEND recruitment</h2>
+          <p>Classroom Support is a leading supplier of Teaching Assistants for SEN and mainstream schools throughout London, Kent &amp; the South East — offering short-term, long-term and permanent vacancies.</p>
+          <p>Our dedicated consultants take the time to understand your school's individual culture and needs. Every placement is a genuinely great fit, not just a name on a list.</p>
+          <div class="btns">
+            <a href="our-approach.html" class="btn btn-dark">Our Approach</a>
+            <a href="contact.html" class="btn btn-outline-dark">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="sec-blue">
+    <div class="stats reveal">
+      <div class="stat">
+        <span class="stat__num" data-count="500" data-suffix="+">500+</span>
+        <span class="stat__label">Schools Supported</span>
+      </div>
+      <div class="stat delay-1">
+        <span class="stat__num" data-count="15" data-suffix="+ yrs">15+ yrs</span>
+        <span class="stat__label">Industry Experience</span>
+      </div>
+      <div class="stat delay-2">
+        <span class="stat__num" data-count="100" data-suffix="%">100%</span>
+        <span class="stat__label">Safeguarding Checked</span>
+      </div>
+      <div class="stat delay-3">
+        <span class="stat__num">3</span>
+        <span class="stat__label">Regions Covered</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION SPLIT -->
+  <section class="sec sec-white">
+    <div class="container">
+      <div class="split split--rev reveal">
+        <div class="split__text">
+          <span class="label">Our Mission</span>
+          <h2>Ensuring every child achieves their full potential</h2>
+          <p>At Classroom Support, we are passionate about the children we support. We recognise that the right staff have an integral part to play in the positive learning experiences for children in all schools.</p>
+          <p>It's about giving children a life without limits — opening doors and showing them that anything is possible. There is nothing more rewarding than watching a child with additional needs make connections with the world around them.</p>
+          <div class="btns">
+            <a href="contact.html" class="btn btn-dark">Work With Us</a>
+            <a href="our-approach.html" class="btn btn-outline-dark">Our Approach</a>
+          </div>
+        </div>
+        <div class="split__img">
+          <img src="https://images.squarespace-cdn.com/content/v1/5f50b73514c683547b189f6d/1599465704478-2LQB7SF8FFVPRXYZGEOS/Childrens_Hands.jpg" alt="Children's hands working together" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="sec sec-yellow">
+    <div class="container">
+      <div class="sec-header reveal">
+        <span class="label">What Schools Say</span>
+        <h2>Trusted by schools across the South East</h2>
+      </div>
+    </div>
+    <div class="testimonials reveal">
+      <div class="testimonial-card">
+        <span class="testimonial-card__mark">"</span>
+        <p class="testimonial-card__quote">I called Classroom Support hoping they'd help me find a TA who'd buy into our school's culture and ethos. Their consultant was so helpful and keen to help us fill the vacancy with the best possible candidate. The process was professionally handled and I can't speak highly enough of their support.</p>
+        <div class="testimonial-card__attr">Deputy Head Teacher / SENCO <span>Primary School, Sevenoaks</span></div>
+      </div>
+      <div class="testimonial-card">
+        <span class="testimonial-card__mark">"</span>
+        <p class="testimonial-card__quote">We were seeking support to cover temporary TA absences. Classroom Support provided appropriate support incredibly quickly. We've now had two agency TAs supporting the school for two full terms and the support has been consistently high standard. Communication is always straightforward.</p>
+        <div class="testimonial-card__attr">School Manager <span>Primary School, London</span></div>
+      </div>
+      <div class="testimonial-card">
+        <span class="testimonial-card__mark">"</span>
+        <p class="testimonial-card__quote">Our school has been working with Classroom Support since June 2022. Jodie has a great understanding of our SEND support requirements and is caring to our needs and to her staff. She responds quickly, which shows the company is efficient and dedicated to customer satisfaction. Highly recommend.</p>
+        <div class="testimonial-card__attr">Head Teacher <span>Special School, Kent</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="sec-red cta-band">
+    <div class="container">
+      <h2 class="reveal">Ready to take the next step?</h2>
+      <p class="lead reveal delay-1">Whether you're looking for your next teaching role or need exceptional staff for your school — our team is ready to help.</p>
+      <div class="btns reveal delay-2">
+        <a href="https://classroomsupport.vincere.io/careers/" class="btn btn-white btn-lg" target="_blank" rel="noopener">Browse All Jobs</a>
+        <a href="contact.html" class="btn btn-outline-white btn-lg">Speak to a Consultant</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <img src="img/logo.svg" alt="Classroom Support puzzle piece logo">
+            <span>Classroom<br>Support</span>
+          </a>
+          <p>Leading specialists in SEND recruitment for schools across London, Kent and the South East.</p>
+          <div class="footer__social">
+            <a href="https://www.linkedin.com/company/classroom-support/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://twitter.com/ClassroomSuppo1" target="_blank" rel="noopener" aria-label="Twitter/X">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/Classroom-Support-111917647976403" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h5>Who We Help</h5>
+          <ul>
+            <li><a href="teaching-assistants.html">Teaching Assistants</a></li>
+            <li><a href="teachers.html">Teachers</a></li>
+            <li><a href="schools.html">Schools</a></li>
+            <li><a href="https://classroomsupport.vincere.io/careers/" target="_blank" rel="noopener">View All Jobs</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="our-approach.html">Our Approach</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="https://classroomsupport.vincere.io/careers/candidate/login" target="_blank" rel="noopener">Log In / Register</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Get in Touch</h5>
+          <address>
+            <a href="https://maps.google.com/?q=Chatterton+Works,+Chantry+Lane,+Bromley,+BR2+9QL" target="_blank" rel="noopener">Chatterton Works, Chantry Lane,<br>Bromley, BR2 9QL</a>
+            <a href="tel:+4401689475275">01689 475 275</a>
+            <a href="mailto:info@classroomsupport.co.uk">info@classroomsupport.co.uk</a>
+          </address>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Classroom Support Ltd. All rights reserved. REC member.</p>
+        <div class="footer__policies">
+          <a href="https://www.classroomsupport.co.uk/s/Complaints-Policy-2026-3phj.pdf" target="_blank" rel="noopener">Complaints Policy</a>
+          <a href="https://www.classroomsupport.co.uk/s/Customer-Service-Policy-2026.pdf" target="_blank" rel="noopener">Customer Service Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
     <div class="container">
       <div class="hero__content">
         <div class="hero__eyebrow">

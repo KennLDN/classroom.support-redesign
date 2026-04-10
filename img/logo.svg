@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-3 -3 106 106" role="img" aria-label="Classroom Support">
+  <title>Classroom Support</title>
+  <!-- Puzzle piece paths: 4 interlocking pieces in brand colours -->
+  <!-- Red: top-left — convex right, convex bottom -->
+  <path d="M 0,0 L 50,0 L 50,17 A 8 8 0 0 1 50,33 L 50,50 L 33,50 A 8 8 0 0 1 17,50 L 0,50 Z"
+        fill="#E03D30" stroke="white" stroke-width="3" paint-order="stroke fill"/>
+  <!-- Green: top-right — concave left, convex bottom -->
+  <path d="M 50,0 L 100,0 L 100,50 L 83,50 A 8 8 0 0 1 67,50 L 50,50 L 50,33 A 8 8 0 0 0 50,17 L 50,0 Z"
+        fill="#5CB83A" stroke="white" stroke-width="3" paint-order="stroke fill"/>
+  <!-- Blue: bottom-left — concave top, convex right -->
+  <path d="M 0,50 L 17,50 A 8 8 0 0 1 33,50 L 50,50 L 50,67 A 8 8 0 0 1 50,83 L 50,100 L 0,100 Z"
+        fill="#3A8FCC" stroke="white" stroke-width="3" paint-order="stroke fill"/>
+  <!-- Yellow: bottom-right — concave top, concave left -->
+  <path d="M 50,50 L 67,50 A 8 8 0 0 1 83,50 L 100,50 L 100,100 L 50,100 L 50,83 A 8 8 0 0 0 50,67 L 50,50 Z"
+        fill="#F7A825" stroke="white" stroke-width="3" paint-order="stroke fill"/>
+</svg>

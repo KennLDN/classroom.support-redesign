@@ -12,12 +12,11 @@
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="nav">
+  <nav class="nav" id="nav">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">
-        <span class="nav__logo-text">Classroom Support</span>
-        <span class="nav__logo-bar"></span>
+        <img src="img/logo.svg" alt="" class="nav__logo-mark" aria-hidden="true">
+        <span class="nav__logo-name">Classroom<br>Support</span>
       </a>
       <div class="nav__links">
         <a href="teaching-assistants.html">Teaching Assistants</a>
@@ -28,239 +27,189 @@
         <a href="contact.html">Contact</a>
       </div>
       <div class="nav__actions">
-        <a href="https://classroomsupport.vincere.io/careers/candidate/login" class="btn btn--outline" target="_blank" rel="noopener">Log In</a>
-        <a href="https://classroomsupport.vincere.io/careers/" class="btn btn--primary" target="_blank" rel="noopener">Find Jobs</a>
+        <a href="https://classroomsupport.vincere.io/careers/candidate/login" class="btn btn-outline-dark" target="_blank" rel="noopener">Log In</a>
+        <a href="contact.html" class="btn btn-red">Get in Touch</a>
       </div>
-      <button class="nav__hamburger" aria-label="Toggle menu">
+      <button class="nav__burger" id="nav-burger" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <div class="nav__rainbow-line"></div>
   </nav>
-  <div class="nav__mobile">
+  <div class="nav__mobile" id="nav-mobile" hidden>
     <a href="teaching-assistants.html">Teaching Assistants</a>
     <a href="teachers.html">Teachers</a>
     <a href="schools.html">Schools</a>
     <a href="our-approach.html">Our Approach</a>
     <a href="https://classroomsupport.vincere.io/careers/" target="_blank" rel="noopener">View Jobs</a>
     <a href="contact.html">Contact Us</a>
-    <a href="https://classroomsupport.vincere.io/careers/" class="btn btn--primary" target="_blank" rel="noopener">Browse All Jobs →</a>
+    <div class="nav__mobile-actions">
+      <a href="https://classroomsupport.vincere.io/careers/candidate/login" class="btn btn-outline-dark w-full" target="_blank" rel="noopener">Log In</a>
+      <a href="contact.html" class="btn btn-red w-full">Get in Touch</a>
+    </div>
   </div>
 
-  <!-- PAGE HERO -->
-  <section class="page-hero">
-    <div class="page-hero__grid"></div>
-    <div class="page-hero__orb page-hero__orb--1"></div>
-    <div class="page-hero__orb page-hero__orb--2"></div>
+  <section class="page-hero sec-green">
     <div class="container">
-      <div class="page-hero__content">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="index.html">Home</a>
-          <span class="breadcrumb-sep">›</span>
-          <span>Our Approach</span>
-        </nav>
-        <span class="section-label" style="color: rgba(255,255,255,0.5); margin-bottom: 16px;">Why Choose Us</span>
-        <h1>Why work with<br><span class="rainbow-text">Classroom Support?</span></h1>
-        <p class="lead" style="margin-top: 16px;">We're not just a recruitment agency — we're education specialists who take the time to understand every school, every candidate, and every placement we make.</p>
+      <span class="label">What Makes Us Different</span>
+      <h1>We do things<br>differently</h1>
+      <p class="lead">We're not just a recruitment agency — we're education specialists who take time to truly understand every school, every candidate, and every placement we make.</p>
+      <div class="btns">
+        <a href="contact.html" class="btn btn-white btn-lg">Get in Touch</a>
+        <a href="schools.html" class="btn btn-outline-white btn-lg">For Schools</a>
       </div>
     </div>
   </section>
-  <div class="rainbow-bar rainbow-bar--thick"></div>
 
-  <!-- MAIN APPROACH SPLIT -->
-  <section class="section" style="background: var(--white);">
+  <!-- APPROACH SPLIT -->
+  <section class="sec sec-white">
     <div class="container">
-      <div class="feature-split reveal">
-        <div class="feature-split__image">
-          <img
-            src="https://images.squarespace-cdn.com/content/v1/5f50b73514c683547b189f6d/1599160927576-70B4D7CNX6J5QSLX5F5D/Meeting3.jpg"
-            alt="Classroom Support consultant discussing requirements"
-            loading="lazy"
-          >
-          <div class="feature-split__badge">
-            <div class="feature-split__badge-icon" style="background: rgba(67,97,238,0.1);">🎯</div>
-            <div class="feature-split__badge-text">
-              <strong>Personal</strong>
-              <span>Service Always</span>
-            </div>
-          </div>
+      <div class="split reveal">
+        <div class="split__img">
+          <img src="https://images.squarespace-cdn.com/content/v1/5f50b73514c683547b189f6d/1599160927576-70B4D7CNX6J5QSLX5F5D/Meeting3.jpg" alt="Classroom Support consultant discussing requirements" loading="lazy">
         </div>
-        <div class="feature-split__content">
-          <span class="section-label">Our Approach</span>
+        <div class="split__text">
+          <span class="label">Our Approach</span>
           <h2>A bespoke service built around your needs</h2>
-          <p>Classroom Support is a leading supplier of Teaching Assistants for both SEN and mainstream schools throughout London, Kent &amp; the South East. We offer recruitment solutions for short-term, long-term and permanent vacancies.</p>
-          <p>Our team of dedicated Consultants work closely with a host of Special Schools, Pupil Referral Units (PRUs), Alternative Provisions and SEN provisions within mainstream schools — providing each a bespoke solution for their staffing needs.</p>
-          <ul class="checklist">
-            <li>Personal service tailored to each individual school</li>
-            <li>Specialist knowledge of SEN and SEND recruitment</li>
-            <li>Long-term relationships, not transactional placements</li>
-            <li>Dedicated consultant who gets to know your setting</li>
-          </ul>
+          <p>Classroom Support is a leading supplier of Teaching Assistants for SEN and mainstream schools throughout London, Kent &amp; the South East — offering short-term, long-term and permanent vacancies.</p>
+          <p>Our dedicated consultants work closely with Special Schools, PRUs, Alternative Provisions and SEN provisions within mainstream schools — providing each a bespoke staffing solution.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Personal service, always</span>
+            <span class="skill-tag">Specialist SEN knowledge</span>
+            <span class="skill-tag">Long-term relationships</span>
+            <span class="skill-tag">No charge until you hire</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES OVERVIEW -->
-  <section class="section" style="background: var(--gray-50);">
+  <!-- SERVICES TILES -->
+  <section class="sec sec-cream">
     <div class="container">
-      <div class="section-header centered reveal mb-12">
-        <span class="section-label section-label--centered">Services We Offer</span>
+      <div class="sec-header reveal">
+        <span class="label">Services We Offer</span>
         <h2>Flexible recruitment for every need</h2>
-        <p>We can help with short-term cover, longer-term placements, or permanent hires. We don't charge a penny until you find someone you'd like to hire.</p>
+        <p>We don't charge a penny until you find someone you'd like to hire.</p>
       </div>
-      <div class="cards-grid reveal">
-        <div class="card card--bordered reveal reveal--delay-1">
-          <div class="card__accent" style="background: linear-gradient(90deg, var(--r1), var(--r2));"></div>
-          <div class="card__icon card__icon--r1">⚡</div>
-          <h3>Short-Term &amp; Day-to-Day</h3>
-          <p>Need cover at short notice? Our team can mobilise quickly to place qualified, vetted staff in your school the very same day — reliably and safely.</p>
-        </div>
-        <div class="card card--bordered reveal reveal--delay-2">
-          <div class="card__accent" style="background: linear-gradient(90deg, var(--r4), var(--r5));"></div>
-          <div class="card__icon card__icon--r4">📅</div>
-          <h3>Long-Term Placements</h3>
-          <p>Building a strong relationship between a TA or teacher and your school takes time. Our long-term placements give you the consistency your pupils deserve.</p>
-        </div>
-        <div class="card card--bordered reveal reveal--delay-3">
-          <div class="card__accent" style="background: linear-gradient(90deg, var(--r5), var(--r6));"></div>
-          <div class="card__icon card__icon--r5">🔑</div>
-          <h3>Permanent Recruitment</h3>
-          <p>Found someone who's a perfect fit on supply? We offer competitive temporary-to-permanent options so you can retain the talent you've come to rely on.</p>
-        </div>
+    </div>
+    <div class="tiles reveal">
+      <div class="tile tile--red">
+        <span class="tile__num">01</span>
+        <span class="label">Immediate Cover</span>
+        <h4>Short-Term &amp; Day-to-Day</h4>
+        <p>Need cover at short notice? Our team can mobilise quickly to place qualified, vetted staff the very same day.</p>
+      </div>
+      <div class="tile tile--blue">
+        <span class="tile__num">02</span>
+        <span class="label">Term-Time Placements</span>
+        <h4>Long-Term Placements</h4>
+        <p>Building a strong relationship between a TA and your school takes time. Our long-term placements give pupils the consistency they deserve.</p>
+      </div>
+      <div class="tile tile--green">
+        <span class="tile__num">03</span>
+        <span class="label">Staff Retention</span>
+        <h4>Permanent Recruitment</h4>
+        <p>Found someone who's a perfect fit? We offer competitive temp-to-perm options so you can retain the talent you've come to rely on.</p>
       </div>
     </div>
   </section>
 
-  <!-- VALUES SECTION -->
-  <section class="section" style="background: var(--white);">
+  <!-- VALUES -->
+  <section class="sec sec-white">
     <div class="container">
-      <div class="section-header centered reveal mb-12">
-        <span class="section-label section-label--centered">Our Values</span>
+      <div class="sec-header reveal">
+        <span class="label">Our Values</span>
         <h2>What drives everything we do</h2>
-        <p>At the heart of Classroom Support is a set of values that guide every decision we make.</p>
       </div>
-      <div class="benefits-grid">
-        <div class="benefit-item reveal reveal--delay-1">
-          <div class="benefit-item__icon card__icon--r1">❤️</div>
-          <div>
-            <h4>Children First</h4>
-            <p>Every decision we make centres on the welfare and development of the children in the schools we serve. This isn't just a policy — it's a genuine belief.</p>
-          </div>
-        </div>
-        <div class="benefit-item reveal reveal--delay-2">
-          <div class="benefit-item__icon card__icon--r4">🛡️</div>
-          <div>
-            <h4>Safeguarding Without Compromise</h4>
-            <p>We never cut corners on compliance. Every candidate is personally interviewed and fully vetted — every single time, no exceptions.</p>
-          </div>
-        </div>
-        <div class="benefit-item reveal reveal--delay-3">
-          <div class="benefit-item__icon card__icon--r5">🤝</div>
-          <div>
-            <h4>True Partnership</h4>
-            <p>We view our schools and candidates as long-term partners, not transactions. We invest in understanding their needs so our service keeps improving.</p>
-          </div>
-        </div>
-        <div class="benefit-item reveal reveal--delay-4">
-          <div class="benefit-item__icon card__icon--r2">✨</div>
-          <div>
-            <h4>Quality Over Quantity</h4>
-            <p>We'd rather make one outstanding placement than ten mediocre ones. Your school's culture and the child's needs always guide us.</p>
-          </div>
-        </div>
-        <div class="benefit-item reveal reveal--delay-1">
-          <div class="benefit-item__icon card__icon--r3">💬</div>
-          <div>
-            <h4>Open Communication</h4>
-            <p>We're always accessible, honest and proactive. If there's an issue, we deal with it. If you need something, we're on it — fast.</p>
-          </div>
-        </div>
-        <div class="benefit-item reveal reveal--delay-2">
-          <div class="benefit-item__icon card__icon--r6">🌱</div>
-          <div>
-            <h4>Supporting Growth</h4>
-            <p>We don't just place candidates — we support their development. From CV advice to career guidance, we're invested in your long-term success.</p>
-          </div>
-        </div>
+    </div>
+    <div class="benefits reveal">
+      <div class="benefit">
+        <div class="benefit__icon">❤️</div>
+        <h4>Children First</h4>
+        <p>Every decision centres on the welfare and development of the children in the schools we serve.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit__icon">🛡️</div>
+        <h4>Safeguarding Without Compromise</h4>
+        <p>We never cut corners on compliance. Every candidate is personally interviewed and fully vetted — every time, no exceptions.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit__icon">🤝</div>
+        <h4>True Partnership</h4>
+        <p>We view schools and candidates as long-term partners, not transactions. Service keeps improving because we listen.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit__icon">✨</div>
+        <h4>Quality Over Quantity</h4>
+        <p>We'd rather make one outstanding placement than ten mediocre ones. Your school's culture always guides us.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit__icon">💬</div>
+        <h4>Open Communication</h4>
+        <p>Always accessible, honest and proactive. If there's an issue, we deal with it — if you need something, we're on it fast.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit__icon">🌱</div>
+        <h4>Supporting Growth</h4>
+        <p>We don't just place candidates — we support their development. We're invested in your long-term success.</p>
       </div>
     </div>
   </section>
 
-  <!-- VETTING SECTION -->
-  <section class="section" style="background: var(--navy-800);">
+  <!-- VETTING -->
+  <section class="sec-blue">
     <div class="container">
-      <div class="section-header centered reveal mb-12" style="color: white;">
-        <span class="section-label section-label--centered" style="color: rgba(255,255,255,0.6);">Vetting &amp; Safeguarding</span>
-        <h2 style="color: white;">Our rigorous safeguarding process</h2>
-        <p style="color: rgba(255,255,255,0.6);">There is nothing Classroom Support takes more seriously than the safety of the children in the schools we serve. Our vetting processes fully align with DfE and REC guidelines.</p>
+      <div class="sec-header reveal">
+        <span class="label">Vetting &amp; Safeguarding</span>
+        <h2>Our rigorous safeguarding process</h2>
+        <p>There is nothing we take more seriously than the safety of children in the schools we serve. Our vetting processes fully align with DfE and REC guidelines.</p>
       </div>
-      <div class="vetting-grid reveal">
-        <div class="vetting-item"><div class="vetting-check">✓</div><span>Face-to-face interview with specialist consultant</span></div>
-        <div class="vetting-item"><div class="vetting-check">✓</div><span>Right to work check</span></div>
-        <div class="vetting-item"><div class="vetting-check">✓</div><span>Photo ID and address check</span></div>
-        <div class="vetting-item"><div class="vetting-check">✓</div><span>Children's Barred List check (List 99)</span></div>
-        <div class="vetting-item"><div class="vetting-check">✓</div><span>Enhanced DBS — Update Service registered</span></div>
-        <div class="vetting-item"><div class="vetting-check">✓</div><span>Teaching Regulation Agency (TRA) check</span></div>
-        <div class="vetting-item"><div class="vetting-check">✓</div><span>Medical check</span></div>
-        <div class="vetting-item"><div class="vetting-check">✓</div><span>Minimum two professional references</span></div>
-        <div class="vetting-item"><div class="vetting-check">✓</div><span>Relevant qualifications verification</span></div>
-        <div class="vetting-item"><div class="vetting-check">✓</div><span>Childcare Disqualification Questionnaire (Primary)</span></div>
+    </div>
+    <div class="vetting-grid reveal">
+      <div class="vetting-item">
+        <span class="vetting-item__n">01</span>
+        <div class="vetting-item__text"><strong>Face-to-face interview</strong>Every candidate meets a specialist consultant in person.</div>
       </div>
-      <div style="margin-top: 40px; text-align: center;" class="reveal">
-        <div style="display: inline-flex; align-items: center; gap: 12px; padding: 16px 28px; border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; color: rgba(255,255,255,0.7); font-size: 0.9375rem;">
-          <span style="font-size: 1.5rem;">🛡️</span>
-          <span>Proud members of the <strong style="color: white;">Recruitment &amp; Employment Confederation (REC)</strong></span>
-        </div>
+      <div class="vetting-item">
+        <span class="vetting-item__n">02</span>
+        <div class="vetting-item__text"><strong>Right to work</strong>Full documentation verified before placement.</div>
+      </div>
+      <div class="vetting-item">
+        <span class="vetting-item__n">03</span>
+        <div class="vetting-item__text"><strong>Enhanced DBS</strong>Update Service registered, checked before every new booking.</div>
+      </div>
+      <div class="vetting-item">
+        <span class="vetting-item__n">04</span>
+        <div class="vetting-item__text"><strong>Children's Barred List</strong>List 99 checked for every candidate, every time.</div>
+      </div>
+      <div class="vetting-item">
+        <span class="vetting-item__n">05</span>
+        <div class="vetting-item__text"><strong>TRA check</strong>Teaching Regulation Agency check for all teaching staff.</div>
+      </div>
+      <div class="vetting-item">
+        <span class="vetting-item__n">06</span>
+        <div class="vetting-item__text"><strong>Professional references</strong>Minimum two employment references obtained and reviewed.</div>
+      </div>
+      <div class="vetting-item">
+        <span class="vetting-item__n">07</span>
+        <div class="vetting-item__text"><strong>Qualifications check</strong>All relevant qualifications verified.</div>
+      </div>
+      <div class="vetting-item">
+        <span class="vetting-item__n">08</span>
+        <div class="vetting-item__text"><strong>Vetting document</strong>Sent to school for every supply booking — simplifying safeguarding records.</div>
       </div>
     </div>
   </section>
 
-  <!-- BOOKING CONFIRMATION SECTION -->
-  <section class="section" style="background: var(--gray-50);">
+  <!-- CTA BAND -->
+  <section class="sec-red cta-band">
     <div class="container">
-      <div class="section-header centered reveal mb-12">
-        <span class="section-label section-label--centered">Confirming a Booking</span>
-        <h2>Complete transparency at every step</h2>
-        <p>For every supply booking you make, your dedicated consultant will send you a Classroom Support Vetting &amp; Safeguarding document — confirming every check has been completed, so your records stay compliant.</p>
-      </div>
-      <div class="feature-split reveal">
-        <div class="feature-split__content">
-          <span class="section-label">For Schools</span>
-          <h2>Simplified safeguarding records for supply staff</h2>
-          <p>Managing safeguarding compliance for supply staff can be complex and time-consuming. At Classroom Support, we make it simple. For every booking, your consultant sends a comprehensive confirmation document so you have everything you need for Ofsted and your own internal records.</p>
-          <p>Our schools tell us that this comprehensive document greatly simplifies the process of ensuring vetting for supply staff has been carefully checked and recorded.</p>
-          <a href="contact.html" class="btn btn--navy">
-            Learn More
-            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
-          </a>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 12px; justify-content: center;">
-          <div class="vetting-item reveal reveal--delay-1"><div class="vetting-check">✓</div><span>Face-to-face interview confirmed</span></div>
-          <div class="vetting-item reveal reveal--delay-2"><div class="vetting-check">✓</div><span>DBS status confirmed &amp; Update Service registered</span></div>
-          <div class="vetting-item reveal reveal--delay-3"><div class="vetting-check">✓</div><span>Right to work documentation confirmed</span></div>
-          <div class="vetting-item reveal reveal--delay-4"><div class="vetting-check">✓</div><span>Professional references obtained and reviewed</span></div>
-          <div class="vetting-item reveal reveal--delay-1"><div class="vetting-check">✓</div><span>Barred list &amp; TRA checks completed</span></div>
-          <div class="vetting-item reveal reveal--delay-2"><div class="vetting-check">✓</div><span>Ongoing suitability checks performed</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-band">
-    <div class="cta-band__orb cta-band__orb--1"></div>
-    <div class="cta-band__orb cta-band__orb--2"></div>
-    <div class="cta-band__bg-grid"></div>
-    <div class="container">
-      <div class="cta-band__inner reveal">
-        <h2>Ready to work with us?</h2>
-        <p>Whether you're a school looking for talented staff or a candidate searching for your next role, we'd love to hear from you.</p>
-        <div class="cta-band__btns">
-          <a href="contact.html" class="btn btn--primary btn--lg">Get in Touch</a>
-          <a href="schools.html" class="btn btn--outline btn--lg">For Schools</a>
-          <a href="teaching-assistants.html" class="btn btn--outline btn--lg">Find a Role</a>
-        </div>
+      <h2 class="reveal">Ready to work with us?</h2>
+      <p class="lead reveal delay-1">Whether you're a school looking for talented staff or a candidate searching for your next role — we'd love to hear from you.</p>
+      <div class="btns reveal delay-2">
+        <a href="contact.html" class="btn btn-white btn-lg">Get in Touch</a>
+        <a href="schools.html" class="btn btn-outline-white btn-lg">For Schools</a>
+        <a href="teaching-assistants.html" class="btn btn-outline-white btn-lg">Find a Role</a>
       </div>
     </div>
   </section>
@@ -268,55 +217,59 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <div class="footer__top">
+      <div class="footer__grid">
         <div class="footer__brand">
-          <a href="index.html" class="nav__logo">
-            <span class="nav__logo-text">Classroom Support</span>
-            <span class="nav__logo-bar"></span>
+          <a href="index.html" class="footer__logo">
+            <img src="img/logo.svg" alt="Classroom Support puzzle piece logo">
+            <span>Classroom<br>Support</span>
           </a>
-          <p class="footer__tagline">Leading specialists in SEND recruitment for schools across London, Kent and the South East.</p>
+          <p>Leading specialists in SEND recruitment for schools across London, Kent and the South East.</p>
           <div class="footer__social">
-            <a href="https://www.linkedin.com/company/classroom-support/" class="footer__social-link" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
-            <a href="https://twitter.com/ClassroomSuppo1" class="footer__social-link" target="_blank" rel="noopener" aria-label="X">𝕏</a>
-            <a href="https://www.facebook.com/Classroom-Support-111917647976403" class="footer__social-link" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+            <a href="https://www.linkedin.com/company/classroom-support/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://twitter.com/ClassroomSuppo1" target="_blank" rel="noopener" aria-label="Twitter/X">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/Classroom-Support-111917647976403" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
           </div>
         </div>
-        <div>
-          <p class="footer__col-title">Services</p>
-          <ul class="footer__links">
+        <div class="footer__col">
+          <h5>Who We Help</h5>
+          <ul>
             <li><a href="teaching-assistants.html">Teaching Assistants</a></li>
             <li><a href="teachers.html">Teachers</a></li>
             <li><a href="schools.html">Schools</a></li>
             <li><a href="https://classroomsupport.vincere.io/careers/" target="_blank" rel="noopener">View All Jobs</a></li>
           </ul>
         </div>
-        <div>
-          <p class="footer__col-title">Company</p>
-          <ul class="footer__links">
+        <div class="footer__col">
+          <h5>Company</h5>
+          <ul>
             <li><a href="our-approach.html">Our Approach</a></li>
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="https://classroomsupport.vincere.io/careers/candidate/login" target="_blank" rel="noopener">Log In / Register</a></li>
           </ul>
         </div>
-        <div>
-          <p class="footer__col-title">Get in Touch</p>
-          <p class="footer__address">Chatterton Works, Chantry Lane,<br>Bromley, BR2 9QL</p>
-          <ul class="footer__links" style="margin-top: 12px;">
-            <li><a href="tel:+4401689475275">01689 475 275</a></li>
-            <li><a href="mailto:info@classroomsupport.co.uk">info@classroomsupport.co.uk</a></li>
-          </ul>
-          <div class="footer__rec">🛡️ REC Member</div>
+        <div class="footer__col">
+          <h5>Get in Touch</h5>
+          <address>
+            <a href="https://maps.google.com/?q=Chatterton+Works,+Chantry+Lane,+Bromley,+BR2+9QL" target="_blank" rel="noopener">Chatterton Works, Chantry Lane,<br>Bromley, BR2 9QL</a>
+            <a href="tel:+4401689475275">01689 475 275</a>
+            <a href="mailto:info@classroomsupport.co.uk">info@classroomsupport.co.uk</a>
+          </address>
         </div>
       </div>
       <div class="footer__bottom">
-        <p class="footer__copyright">© 2026 Classroom Support Ltd. All rights reserved.</p>
+        <p>© 2026 Classroom Support Ltd. All rights reserved. REC member.</p>
         <div class="footer__policies">
           <a href="https://www.classroomsupport.co.uk/s/Complaints-Policy-2026-3phj.pdf" target="_blank" rel="noopener">Complaints Policy</a>
           <a href="https://www.classroomsupport.co.uk/s/Customer-Service-Policy-2026.pdf" target="_blank" rel="noopener">Customer Service Policy</a>
         </div>
       </div>
     </div>
-    <div class="footer__rainbow"></div>
   </footer>
 
   <script src="js/main.js"></script>

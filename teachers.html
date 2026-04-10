@@ -12,12 +12,11 @@
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="nav">
+  <nav class="nav" id="nav">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">
-        <span class="nav__logo-text">Classroom Support</span>
-        <span class="nav__logo-bar"></span>
+        <img src="img/logo.svg" alt="" class="nav__logo-mark" aria-hidden="true">
+        <span class="nav__logo-name">Classroom<br>Support</span>
       </a>
       <div class="nav__links">
         <a href="teaching-assistants.html">Teaching Assistants</a>
@@ -28,228 +27,193 @@
         <a href="contact.html">Contact</a>
       </div>
       <div class="nav__actions">
-        <a href="https://classroomsupport.vincere.io/careers/candidate/login" class="btn btn--outline" target="_blank" rel="noopener">Log In</a>
-        <a href="https://classroomsupport.vincere.io/careers/" class="btn btn--primary" target="_blank" rel="noopener">Find Jobs</a>
+        <a href="https://classroomsupport.vincere.io/careers/candidate/login" class="btn btn-outline-dark" target="_blank" rel="noopener">Log In</a>
+        <a href="contact.html" class="btn btn-red">Get in Touch</a>
       </div>
-      <button class="nav__hamburger" aria-label="Toggle menu">
+      <button class="nav__burger" id="nav-burger" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <div class="nav__rainbow-line"></div>
   </nav>
-  <div class="nav__mobile">
+  <div class="nav__mobile" id="nav-mobile" hidden>
     <a href="teaching-assistants.html">Teaching Assistants</a>
     <a href="teachers.html">Teachers</a>
     <a href="schools.html">Schools</a>
     <a href="our-approach.html">Our Approach</a>
     <a href="https://classroomsupport.vincere.io/careers/" target="_blank" rel="noopener">View Jobs</a>
     <a href="contact.html">Contact Us</a>
-    <a href="https://classroomsupport.vincere.io/careers/" class="btn btn--primary" target="_blank" rel="noopener">Browse All Jobs →</a>
+    <div class="nav__mobile-actions">
+      <a href="https://classroomsupport.vincere.io/careers/candidate/login" class="btn btn-outline-dark w-full" target="_blank" rel="noopener">Log In</a>
+      <a href="contact.html" class="btn btn-red w-full">Get in Touch</a>
+    </div>
   </div>
 
-  <!-- PAGE HERO -->
-  <section class="page-hero">
-    <div class="page-hero__grid"></div>
-    <div class="page-hero__orb page-hero__orb--1"></div>
-    <div class="page-hero__orb page-hero__orb--2"></div>
+  <section class="page-hero sec-yellow">
     <div class="container">
-      <div class="page-hero__content">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="index.html">Home</a>
-          <span class="breadcrumb-sep">›</span>
-          <span>Teachers</span>
-        </nav>
-        <span class="section-label" style="color: rgba(255,255,255,0.5); margin-bottom: 16px;">For Teachers</span>
-        <h1>Connecting outstanding teachers<br><span class="rainbow-text">with schools across London, Kent &amp; Essex</span></h1>
-        <p class="lead" style="margin-top: 16px;">We work closely with Primary, Secondary and SEND schools to place high-quality teachers who deliver excellent outcomes — from Early Career Teachers to experienced subject specialists.</p>
-        <div style="margin-top: 32px; display: flex; gap: 14px; flex-wrap: wrap;">
-          <a href="https://classroomsupport.vincere.io/careers/" class="btn btn--primary btn--lg" target="_blank" rel="noopener">Browse Teaching Jobs</a>
-          <a href="contact.html" class="btn btn--outline btn--lg">Talk to Our Team</a>
-        </div>
+      <span class="label">For Teachers</span>
+      <h1>Find your next<br>teaching role</h1>
+      <p class="lead">We connect outstanding Primary, Secondary and SEND teachers with schools across London, Kent and Essex — supporting every stage of your teaching journey.</p>
+      <div class="btns">
+        <a href="https://classroomsupport.vincere.io/careers/" class="btn btn-dark btn-lg" target="_blank" rel="noopener">Browse Teaching Jobs</a>
+        <a href="contact.html" class="btn btn-outline-dark btn-lg">Talk to Our Team</a>
       </div>
     </div>
   </section>
-  <div class="rainbow-bar rainbow-bar--thick"></div>
 
   <!-- INTRO SPLIT -->
-  <section class="section" style="background: var(--white);">
+  <section class="sec sec-white">
     <div class="container">
-      <div class="feature-split reveal">
-        <div class="feature-split__image">
-          <img
-            src="https://images.squarespace-cdn.com/content/v1/5f50b73514c683547b189f6d/1599465275041-CZJ9JYVGFF1HAG8FJZKU/Teachers_lr.jpg"
-            alt="Teacher working with pupils in the classroom"
-            loading="lazy"
-          >
-          <div class="feature-split__badge">
-            <div class="feature-split__badge-icon" style="background: rgba(249,199,79,0.15);">📚</div>
-            <div class="feature-split__badge-text">
-              <strong>ECT–Expert</strong>
-              <span>All Experience Levels</span>
-            </div>
-          </div>
+      <div class="split reveal">
+        <div class="split__img">
+          <img src="https://images.squarespace-cdn.com/content/v1/5f50b73514c683547b189f6d/1599465275041-CZJ9JYVGFF1HAG8FJZKU/Teachers_lr.jpg" alt="Teacher working with pupils" loading="lazy">
         </div>
-        <div class="feature-split__content">
-          <span class="section-label">For Teachers</span>
+        <div class="split__text">
+          <span class="label">For Teachers</span>
           <h2>Your career. Your terms. Your perfect school.</h2>
-          <p>Classroom Support works closely with Primary, Secondary and SEND schools to provide high-quality teachers who deliver excellent outcomes in the classroom. We focus on fast, reliable staffing solutions and a thorough understanding of each school's curriculum, culture and expectations.</p>
-          <p>Whether you are an Early Career Teacher, an experienced practitioner, or a subject specialist, we are committed to supporting you at every stage of your teaching journey.</p>
-          <ul class="checklist">
-            <li>Roles across Primary, Secondary and SEND</li>
-            <li>Short-term supply to permanent positions</li>
-            <li>Fast, streamlined compliance process</li>
-            <li>Ongoing support from your dedicated consultant</li>
-          </ul>
-          <a href="https://classroomsupport.vincere.io/careers/" class="btn btn--navy" target="_blank" rel="noopener">
-            View All Teaching Roles
-            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
-          </a>
+          <p>Classroom Support works with Primary, Secondary and SEND schools to place high-quality teachers who deliver excellent outcomes. Whether you're an ECT, an experienced practitioner or a subject specialist, we support every stage of your journey.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Primary</span>
+            <span class="skill-tag">Secondary</span>
+            <span class="skill-tag">SEND</span>
+            <span class="skill-tag">Supply</span>
+            <span class="skill-tag">Long-term</span>
+            <span class="skill-tag">Permanent</span>
+          </div>
+          <div class="btns">
+            <a href="https://classroomsupport.vincere.io/careers/" class="btn btn-dark" target="_blank" rel="noopener">View All Teaching Roles</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- WHY TEACHERS CHOOSE US -->
-  <section class="section" style="background: var(--gray-50);">
+  <section class="sec sec-cream">
     <div class="container">
-      <div class="section-header centered reveal mb-12">
-        <span class="section-label section-label--centered">Why Teachers Choose Us</span>
-        <h2>Everything you need to thrive in your career</h2>
-        <p>We focus exclusively on education recruitment — which means we understand what matters to teachers, and what schools really need.</p>
+      <div class="sec-header reveal">
+        <span class="label">Why Teachers Choose Us</span>
+        <h2>Everything you need to thrive</h2>
       </div>
-      <div class="cards-grid">
-        <div class="card card--bordered reveal reveal--delay-1">
-          <div class="card__accent" style="background: linear-gradient(90deg, var(--r5), var(--r6));"></div>
-          <div class="card__icon card__icon--r5">🎓</div>
-          <h3>Dedicated Education Specialists</h3>
-          <p>We focus solely on education recruitment, which means we understand school requirements and teacher expectations with precision. No generalist recruiters, no guesswork.</p>
-        </div>
-        <div class="card card--bordered reveal reveal--delay-2">
-          <div class="card__accent" style="background: linear-gradient(90deg, var(--r4), var(--r5));"></div>
-          <div class="card__icon card__icon--r4">⚡</div>
-          <h3>Fast &amp; Efficient Onboarding</h3>
-          <p>Our compliance team ensures all safeguarding checks are completed quickly and accurately — including DBS, references and barred-list checks — so you can start sooner.</p>
-        </div>
-        <div class="card card--bordered reveal reveal--delay-3">
-          <div class="card__accent" style="background: linear-gradient(90deg, var(--r2), var(--r3));"></div>
-          <div class="card__icon card__icon--r2">🔄</div>
-          <h3>Flexible for Your Lifestyle</h3>
-          <p>Choose from short-term supply, long-term assignments or permanent roles depending on what suits your life and career goals at any given moment.</p>
-        </div>
-        <div class="card card--bordered reveal reveal--delay-4">
-          <div class="card__accent" style="background: linear-gradient(90deg, var(--r1), var(--r2));"></div>
-          <div class="card__icon card__icon--r1">🏫</div>
-          <h3>Strong School Partnerships</h3>
-          <p>We supply teachers to a wide mix of mainstream schools, academies and specialist SEND settings across London, Kent and Essex, giving you real variety in where you teach.</p>
-        </div>
-        <div class="card card--bordered reveal reveal--delay-1">
-          <div class="card__accent" style="background: linear-gradient(90deg, var(--r3), var(--r4));"></div>
-          <div class="card__icon card__icon--r3">💬</div>
-          <h3>Ongoing Support</h3>
-          <p>Teachers receive regular job updates, open communication and professional guidance whenever needed. Your consultant is always just a call or message away.</p>
-        </div>
-        <div class="card card--bordered reveal reveal--delay-2">
-          <div class="card__accent" style="background: linear-gradient(90deg, var(--r6), var(--r5));"></div>
-          <div class="card__icon card__icon--r6">💷</div>
-          <h3>Competitive Pay Rates</h3>
-          <p>We offer competitive rates that reflect your experience, qualifications and the role you're undertaking — with weekly pay available for supply positions.</p>
-        </div>
+    </div>
+    <div class="benefits reveal">
+      <div class="benefit">
+        <div class="benefit__icon">🎓</div>
+        <h4>Dedicated Education Specialists</h4>
+        <p>We focus solely on education recruitment — no generalist recruiters, no guesswork.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit__icon">⚡</div>
+        <h4>Fast &amp; Efficient Onboarding</h4>
+        <p>DBS, references and safeguarding checks completed quickly so you can start sooner.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit__icon">🔄</div>
+        <h4>Flexible for Your Lifestyle</h4>
+        <p>Short-term supply, long-term or permanent — whatever suits your life and career goals.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit__icon">🏫</div>
+        <h4>Strong School Partnerships</h4>
+        <p>We supply teachers to mainstream schools, academies and specialist SEND settings.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit__icon">💬</div>
+        <h4>Ongoing Support</h4>
+        <p>Open communication and professional guidance from your consultant at all times.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit__icon">💷</div>
+        <h4>Competitive Pay Rates</h4>
+        <p>Competitive rates reflecting your experience, with weekly pay for supply positions.</p>
       </div>
     </div>
   </section>
 
-  <!-- REGIONS / SCHOOL TYPES -->
-  <section class="section" style="background: var(--navy-800);">
+  <!-- COVERAGE TILES -->
+  <section class="sec-blue">
     <div class="container">
-      <div class="section-header centered reveal mb-12" style="color: white;">
-        <span class="section-label section-label--centered" style="color: rgba(255,255,255,0.6);">Coverage</span>
-        <h2 style="color: white;">Where we place teachers</h2>
-        <p style="color: rgba(255,255,255,0.6);">We have strong, established relationships with schools across a broad geography — from inner London boroughs to counties in the South East.</p>
+      <div class="sec-header reveal">
+        <span class="label">Coverage</span>
+        <h2>Where we place teachers</h2>
+        <p>Strong, established relationships with schools across a broad geography.</p>
       </div>
-      <div class="locations-grid reveal">
-        <span class="location-tag">Inner London</span>
-        <span class="location-tag">North London</span>
-        <span class="location-tag">South London</span>
-        <span class="location-tag">East London</span>
-        <span class="location-tag">West London</span>
-        <span class="location-tag">Kent</span>
-        <span class="location-tag">Essex</span>
-        <span class="location-tag">Bromley</span>
-        <span class="location-tag">Croydon</span>
-        <span class="location-tag">Lewisham</span>
-        <span class="location-tag">Sevenoaks</span>
-        <span class="location-tag">Medway</span>
+    </div>
+    <div class="tiles tiles-4 reveal">
+      <div class="tile tile--white">
+        <span class="label">School Type</span>
+        <h4>Primary Schools</h4>
+        <p>State, academy and independent primary settings across London, Kent and Essex.</p>
       </div>
-      <div style="margin-top: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;" class="reveal">
-        <div style="text-align:center; padding: 24px; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px;">
-          <div style="font-size: 2rem; margin-bottom: 8px;">🏫</div>
-          <div style="color: white; font-weight: 600; font-family: var(--font-display);">Primary Schools</div>
-          <div style="color: rgba(255,255,255,0.5); font-size: 0.875rem; margin-top: 4px;">State, Academy &amp; Independent</div>
-        </div>
-        <div style="text-align:center; padding: 24px; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px;">
-          <div style="font-size: 2rem; margin-bottom: 8px;">📐</div>
-          <div style="color: white; font-weight: 600; font-family: var(--font-display);">Secondary Schools</div>
-          <div style="color: rgba(255,255,255,0.5); font-size: 0.875rem; margin-top: 4px;">All subjects &amp; year groups</div>
-        </div>
-        <div style="text-align:center; padding: 24px; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px;">
-          <div style="font-size: 2rem; margin-bottom: 8px;">🌟</div>
-          <div style="color: white; font-weight: 600; font-family: var(--font-display);">SEND Schools</div>
-          <div style="color: rgba(255,255,255,0.5); font-size: 0.875rem; margin-top: 4px;">Special &amp; Specialist Settings</div>
-        </div>
-        <div style="text-align:center; padding: 24px; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px;">
-          <div style="font-size: 2rem; margin-bottom: 8px;">🏢</div>
-          <div style="color: white; font-weight: 600; font-family: var(--font-display);">PRUs &amp; Alt Provisions</div>
-          <div style="color: rgba(255,255,255,0.5); font-size: 0.875rem; margin-top: 4px;">Referral Units &amp; Alternative Settings</div>
-        </div>
+      <div class="tile tile--cream">
+        <span class="label">School Type</span>
+        <h4>Secondary Schools</h4>
+        <p>All subjects and year groups — from full-time supply to permanent subject specialists.</p>
       </div>
+      <div class="tile tile--white">
+        <span class="label">School Type</span>
+        <h4>SEND Schools</h4>
+        <p>Special schools and specialist settings requiring experienced, empathetic practitioners.</p>
+      </div>
+      <div class="tile tile--cream">
+        <span class="label">School Type</span>
+        <h4>PRUs &amp; Alt Provisions</h4>
+        <p>Referral units and alternative provision settings across London and the South East.</p>
+      </div>
+    </div>
+    <div class="location-tags">
+      <span class="location-tag">Inner London</span>
+      <span class="location-tag">South London</span>
+      <span class="location-tag">North London</span>
+      <span class="location-tag">East London</span>
+      <span class="location-tag">Bromley</span>
+      <span class="location-tag">Kent</span>
+      <span class="location-tag">Essex</span>
+      <span class="location-tag">Croydon</span>
+      <span class="location-tag">Sevenoaks</span>
+      <span class="location-tag">Medway</span>
     </div>
   </section>
 
   <!-- PROCESS STEPS -->
-  <section class="section" style="background: var(--white);">
+  <section class="sec-green">
     <div class="container">
-      <div class="section-header centered reveal mb-12">
-        <span class="section-label section-label--centered">Getting Started</span>
+      <div class="sec-header reveal">
+        <span class="label">Getting Started</span>
         <h2>Your journey with Classroom Support</h2>
       </div>
-      <div class="process-steps reveal">
-        <div class="process-step reveal reveal--delay-1">
-          <div class="process-step__num">1</div>
-          <h4>Register &amp; Apply</h4>
-          <p>Create your profile on our portal and apply to roles that match your experience and preference.</p>
-        </div>
-        <div class="process-step reveal reveal--delay-2">
-          <div class="process-step__num">2</div>
-          <h4>Consultant Meeting</h4>
-          <p>Your dedicated consultant will call to get to know you, understand your goals and discuss suitable opportunities.</p>
-        </div>
-        <div class="process-step reveal reveal--delay-3">
-          <div class="process-step__num">3</div>
-          <h4>Compliance Checks</h4>
-          <p>Fast, thorough vetting — DBS, references, qualifications and safeguarding checks completed quickly by our team.</p>
-        </div>
-        <div class="process-step reveal reveal--delay-4">
-          <div class="process-step__num">4</div>
-          <h4>Begin Teaching</h4>
-          <p>Start your placement with the full support of your consultant, ready to make an impact from day one.</p>
-        </div>
+    </div>
+    <div class="steps reveal">
+      <div class="step">
+        <span class="step__num">1</span>
+        <h4>Register &amp; Apply</h4>
+        <p>Create your profile and apply to roles matching your experience and location preference.</p>
+      </div>
+      <div class="step delay-1">
+        <span class="step__num">2</span>
+        <h4>Consultant Meeting</h4>
+        <p>Your dedicated consultant will call to discuss goals and suitable opportunities.</p>
+      </div>
+      <div class="step delay-2">
+        <span class="step__num">3</span>
+        <h4>Compliance Checks</h4>
+        <p>Fast, thorough vetting — DBS, references, qualifications and safeguarding completed quickly.</p>
+      </div>
+      <div class="step delay-3">
+        <span class="step__num">4</span>
+        <h4>Begin Teaching</h4>
+        <p>Start your placement with full consultant support, ready to make an impact from day one.</p>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="cta-band">
-    <div class="cta-band__orb cta-band__orb--1"></div>
-    <div class="cta-band__orb cta-band__orb--2"></div>
-    <div class="cta-band__bg-grid"></div>
+  <!-- CTA BAND -->
+  <section class="sec-red cta-band">
     <div class="container">
-      <div class="cta-band__inner reveal">
-        <h2>Ready to find your next teaching role?</h2>
-        <p>Browse our current vacancies or get in touch with our team for a personal conversation about what's available in your area.</p>
-        <div class="cta-band__btns">
-          <a href="https://classroomsupport.vincere.io/careers/" class="btn btn--primary btn--lg" target="_blank" rel="noopener">Browse All Jobs</a>
-          <a href="contact.html" class="btn btn--outline btn--lg">Speak to a Consultant</a>
-        </div>
+      <h2 class="reveal">Ready to find your next teaching role?</h2>
+      <p class="lead reveal delay-1">Browse our current vacancies or get in touch for a personal conversation about what's available in your area.</p>
+      <div class="btns reveal delay-2">
+        <a href="https://classroomsupport.vincere.io/careers/" class="btn btn-white btn-lg" target="_blank" rel="noopener">Browse All Jobs</a>
+        <a href="contact.html" class="btn btn-outline-white btn-lg">Speak to a Consultant</a>
       </div>
     </div>
   </section>
@@ -257,55 +221,59 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <div class="footer__top">
+      <div class="footer__grid">
         <div class="footer__brand">
-          <a href="index.html" class="nav__logo">
-            <span class="nav__logo-text">Classroom Support</span>
-            <span class="nav__logo-bar"></span>
+          <a href="index.html" class="footer__logo">
+            <img src="img/logo.svg" alt="Classroom Support puzzle piece logo">
+            <span>Classroom<br>Support</span>
           </a>
-          <p class="footer__tagline">Leading specialists in SEND recruitment for schools across London, Kent and the South East.</p>
+          <p>Leading specialists in SEND recruitment for schools across London, Kent and the South East.</p>
           <div class="footer__social">
-            <a href="https://www.linkedin.com/company/classroom-support/" class="footer__social-link" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
-            <a href="https://twitter.com/ClassroomSuppo1" class="footer__social-link" target="_blank" rel="noopener" aria-label="X">𝕏</a>
-            <a href="https://www.facebook.com/Classroom-Support-111917647976403" class="footer__social-link" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+            <a href="https://www.linkedin.com/company/classroom-support/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://twitter.com/ClassroomSuppo1" target="_blank" rel="noopener" aria-label="Twitter/X">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/Classroom-Support-111917647976403" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
           </div>
         </div>
-        <div>
-          <p class="footer__col-title">Services</p>
-          <ul class="footer__links">
+        <div class="footer__col">
+          <h5>Who We Help</h5>
+          <ul>
             <li><a href="teaching-assistants.html">Teaching Assistants</a></li>
             <li><a href="teachers.html">Teachers</a></li>
             <li><a href="schools.html">Schools</a></li>
             <li><a href="https://classroomsupport.vincere.io/careers/" target="_blank" rel="noopener">View All Jobs</a></li>
           </ul>
         </div>
-        <div>
-          <p class="footer__col-title">Company</p>
-          <ul class="footer__links">
+        <div class="footer__col">
+          <h5>Company</h5>
+          <ul>
             <li><a href="our-approach.html">Our Approach</a></li>
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="https://classroomsupport.vincere.io/careers/candidate/login" target="_blank" rel="noopener">Log In / Register</a></li>
           </ul>
         </div>
-        <div>
-          <p class="footer__col-title">Get in Touch</p>
-          <p class="footer__address">Chatterton Works, Chantry Lane,<br>Bromley, BR2 9QL</p>
-          <ul class="footer__links" style="margin-top: 12px;">
-            <li><a href="tel:+4401689475275">01689 475 275</a></li>
-            <li><a href="mailto:info@classroomsupport.co.uk">info@classroomsupport.co.uk</a></li>
-          </ul>
-          <div class="footer__rec">🛡️ REC Member</div>
+        <div class="footer__col">
+          <h5>Get in Touch</h5>
+          <address>
+            <a href="https://maps.google.com/?q=Chatterton+Works,+Chantry+Lane,+Bromley,+BR2+9QL" target="_blank" rel="noopener">Chatterton Works, Chantry Lane,<br>Bromley, BR2 9QL</a>
+            <a href="tel:+4401689475275">01689 475 275</a>
+            <a href="mailto:info@classroomsupport.co.uk">info@classroomsupport.co.uk</a>
+          </address>
         </div>
       </div>
       <div class="footer__bottom">
-        <p class="footer__copyright">© 2026 Classroom Support Ltd. All rights reserved.</p>
+        <p>© 2026 Classroom Support Ltd. All rights reserved. REC member.</p>
         <div class="footer__policies">
           <a href="https://www.classroomsupport.co.uk/s/Complaints-Policy-2026-3phj.pdf" target="_blank" rel="noopener">Complaints Policy</a>
           <a href="https://www.classroomsupport.co.uk/s/Customer-Service-Policy-2026.pdf" target="_blank" rel="noopener">Customer Service Policy</a>
         </div>
       </div>
     </div>
-    <div class="footer__rainbow"></div>
   </footer>
 
   <script src="js/main.js"></script>

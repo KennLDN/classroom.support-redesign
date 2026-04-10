@@ -7,8 +7,8 @@
 
   /* ── Navigation ── */
   const nav = document.querySelector('.nav');
-  const hamburger = document.querySelector('.nav__hamburger');
-  const mobileNav = document.querySelector('.nav__mobile');
+  const hamburger = document.querySelector('#nav-burger');
+  const mobileNav = document.querySelector('#nav-mobile');
 
   // Scroll class on nav
   function updateNav() {
@@ -20,14 +20,15 @@
   // Mobile menu toggle
   if (hamburger && mobileNav) {
     hamburger.addEventListener('click', () => {
-      const open = hamburger.classList.toggle('open');
-      mobileNav.classList.toggle('open', open);
-      document.body.style.overflow = open ? 'hidden' : '';
+      const isOpen = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!isOpen));
+      mobileNav.hidden = isOpen;
+      document.body.style.overflow = !isOpen ? 'hidden' : '';
     });
     mobileNav.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
-        hamburger.classList.remove('open');
-        mobileNav.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        mobileNav.hidden = true;
         document.body.style.overflow = '';
       });
     });
@@ -70,7 +71,7 @@
   const statsObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const numEl = entry.target.querySelector('.stat-item__num');
+        const numEl = entry.target.querySelector('.stat__num');
         if (numEl && numEl.dataset.count) {
           animateCounter(numEl, parseInt(numEl.dataset.count, 10), numEl.dataset.suffix || '');
         }
@@ -79,15 +80,15 @@
     });
   }, { threshold: 0.4 });
 
-  document.querySelectorAll('.stat-item').forEach(el => statsObserver.observe(el));
+  document.querySelectorAll('.stat').forEach(el => statsObserver.observe(el));
 
   /* ── Contact Form ── */
   const contactForm = document.querySelector('#contact-form');
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      const btn = contactForm.querySelector('.form-submit');
-      const success = document.querySelector('.form-success');
+      const btn = contactForm.querySelector('[type="submit"]');
+      const success = contactForm.querySelector('.form-success');
       if (btn) {
         btn.textContent = 'Sending…';
         btn.disabled = true;
@@ -98,9 +99,9 @@
           btn.textContent = 'Send Message';
           btn.disabled = false;
         }
-        if (success) success.classList.add('visible');
+        if (success) success.classList.add('show');
         contactForm.reset();
-        setTimeout(() => { if (success) success.classList.remove('visible'); }, 5000);
+        setTimeout(() => { if (success) success.classList.remove('show'); }, 5000);
       }, 1200);
     });
   }
