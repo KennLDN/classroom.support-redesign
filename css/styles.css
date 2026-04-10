@@ -102,7 +102,7 @@ p  { line-height: 1.75; max-width: 65ch; }
   height: 100%; display: flex; align-items: center; gap: 32px;
 }
 .nav__logo { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
-.nav__logo-mark { width: 38px; height: 38px; flex-shrink: 0; }
+.nav__logo-mark { height: 44px; width: auto; max-width: 180px; flex-shrink: 0; object-fit: contain; }
 .nav__logo-name {
   font-family: var(--font-h); font-weight: 800; font-size: 0.9rem;
   color: var(--dark); line-height: 1.25; letter-spacing: -.01em;
@@ -186,11 +186,11 @@ p  { line-height: 1.75; max-width: 65ch; }
 .hero .lead { color: rgba(255,255,255,.85); max-width: 520px; margin-bottom: 36px; }
 .hero__btns { display: flex; flex-wrap: wrap; gap: 12px; padding-bottom: 72px; }
 .hero__image {
-  align-self: flex-end; flex-shrink: 0;
-  width: 420px; height: 460px;
+  align-self: flex-end; min-width: 0;
+  width: 100%; height: 480px;
   border-radius: 12px 12px 0 0;
   overflow: hidden;
-  box-shadow: -20px 20px 60px rgba(0,0,0,.25);
+  box-shadow: -24px 24px 64px rgba(0,0,0,.28);
 }
 .hero__image img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
 
@@ -209,32 +209,50 @@ p  { line-height: 1.75; max-width: 65ch; }
 .page-hero .btns { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 32px; }
 
 /* ── PILLAR STRIP ─────────────────────────────────────────── */
-.pillars { display: grid; grid-template-columns: repeat(3, 1fr); background: var(--dark); }
+.pillars { display: grid; grid-template-columns: repeat(3, 1fr); background: var(--cream); }
 .pillar {
   padding: 52px 44px 60px;
+  background: #fff;
   display: flex; flex-direction: column; gap: 14px;
   position: relative; overflow: hidden;
-  border-left: 5px solid transparent;
-  border-right: 1px solid rgba(255,255,255,.06);
+  border-top: 5px solid transparent;
+  border-right: 1px solid var(--light);
 }
 .pillar:last-child { border-right: none; }
-.pillar--blue   { border-left-color: var(--blue); }
-.pillar--green  { border-left-color: var(--green); }
-.pillar--yellow { border-left-color: var(--yellow); }
-.pillar__icon  { width: 52px; height: 52px; margin-bottom: 4px; }
-.pillar h3     { font-family: var(--font-h); font-size: 1.4rem; font-weight: 800; color: #fff; line-height: 1.2; }
-.pillar p      { font-size: 0.9375rem; line-height: 1.7; color: rgba(255,255,255,.6); max-width: 40ch; }
+.pillar--blue   { border-top-color: var(--blue); }
+.pillar--green  { border-top-color: var(--green); }
+.pillar--yellow { border-top-color: var(--yellow); }
+/* Icon badge backgrounds */
+.pillar__icon {
+  width: 52px; height: 52px; flex-shrink: 0; margin-bottom: 4px;
+  padding: 12px; border-radius: 10px; box-sizing: border-box;
+}
+.pillar--blue  .pillar__icon { background: var(--blue); }
+.pillar--green .pillar__icon { background: var(--green); }
+.pillar--yellow .pillar__icon { background: rgba(247,168,37,.18); }
+/* Yellow pillar: SVG strokes visible on light background */
+.pillar--yellow .pillar__icon path,
+.pillar--yellow .pillar__icon rect,
+.pillar--yellow .pillar__icon circle { stroke: #b86e00; }
+.pillar h3     { font-family: var(--font-h); font-size: 1.35rem; font-weight: 800; color: var(--dark); line-height: 1.2; }
+.pillar p      { font-size: 0.9375rem; line-height: 1.7; color: #555; max-width: 40ch; }
 .pillar__link  {
   margin-top: 8px;
   font-family: var(--font-h); font-weight: 700; font-size: 0.875rem;
   display: inline-flex; align-items: center; gap: 6px;
-  color: rgba(255,255,255,.75); transition: color .15s, gap .15s;
+  transition: gap .15s;
 }
-.pillar__link:hover { color: #fff; gap: 12px; }
+.pillar--blue  .pillar__link { color: var(--blue); }
+.pillar--green .pillar__link { color: var(--green); }
+.pillar--yellow .pillar__link { color: #b86e00; }
+.pillar__link:hover { gap: 12px; }
 .pillar__deco {
   position: absolute; right: -44px; bottom: -44px;
   width: 160px; height: 160px; opacity: .06;
 }
+.pillar--blue  .pillar__deco path { fill: var(--blue); }
+.pillar--green .pillar__deco path { fill: var(--green); }
+.pillar--yellow .pillar__deco path { fill: var(--yellow); }
 
 /* ── SPLIT LAYOUT ─────────────────────────────────────────── */
 .split     { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
@@ -332,7 +350,7 @@ p  { line-height: 1.75; max-width: 65ch; }
 /* ── VETTING NUMBERED GRID ───────────────────────────────── */
 .vetting-grid {
   display: grid; grid-template-columns: repeat(2, 1fr);
-  max-width: var(--max); margin: 0 auto; padding: 0 var(--pad) var(--sec);
+  max-width: var(--max); margin: 0 auto; padding: 0 var(--pad);
 }
 .vetting-item {
   display: flex; align-items: flex-start; gap: 18px;
@@ -433,7 +451,7 @@ p  { line-height: 1.75; max-width: 65ch; }
 .sec-cream   .skill-tag { background: var(--cream); border: 1px solid var(--light); color: var(--body); }
 
 /* ── STEP PROCESS ────────────────────────────────────────── */
-.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; max-width: var(--max); margin: 0 auto; padding-bottom: var(--sec); }
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; max-width: var(--max); margin: 0 auto; }
 .step  { padding: 48px 32px 44px; text-align: center; border-right: 1px solid rgba(255,255,255,.1); }
 .step:last-child { border-right: none; }
 .sec-yellow .step { border-right-color: rgba(0,0,0,.06); }
@@ -537,7 +555,7 @@ p  { line-height: 1.75; max-width: 65ch; }
 .form-success.show { display: block; }
 
 /* ── LOCATION TAGS ───────────────────────────────────────── */
-.location-tags { display: flex; flex-wrap: wrap; gap: 10px; padding: 0 var(--pad) var(--sec); max-width: var(--max); margin: 32px auto 0; }
+.location-tags { display: flex; flex-wrap: wrap; gap: 10px; padding: 0 var(--pad); max-width: var(--max); margin: 28px auto 0; }
 .location-tag {
   padding: 8px 18px; border-radius: var(--r);
   border: 1.5px solid rgba(255,255,255,.25);
@@ -560,7 +578,7 @@ p  { line-height: 1.75; max-width: 65ch; }
 .footer__logo {
   display: flex; align-items: center; gap: 10px; margin-bottom: 4px;
 }
-.footer__logo img  { width: 36px; height: 36px; flex-shrink: 0; }
+.footer__logo img  { height: 32px; width: auto; max-width: 140px; flex-shrink: 0; object-fit: contain; }
 .footer__logo span {
   font-family: var(--font-h); font-weight: 800; font-size: 0.9rem;
   color: #fff; line-height: 1.2;
